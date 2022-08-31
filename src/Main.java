@@ -6,8 +6,63 @@ public class Main {
         Task4();
         Task5();
         Task6();
+        Task7();
+        Task8();
+        Task9();
+
 
    }
+
+    private static void Task9() {
+        int one=11;
+        int two=222;
+        int three=33;
+        if (one>two && one>three) {
+            System.out.println("One равное "+ one+" бОльшее из трех чисел.");
+        } else {
+            if (two>one && two>three){
+                System.out.println("Two равное "+ two+" бОльшее из трех чисел.");
+            }else {
+                System.out.println("Three равное "+ three+" бОльшее из трех чисел.");
+            }
+        }
+
+    }
+
+    private static void Task8() {
+        int ageChild=9;
+        if (ageChild<5){
+            System.out.println("Если ребенку " +ageChild+" лет, то он не может кататься на аттракционе.");
+        }else {
+            if (ageChild >= 5 && ageChild <= 14) {
+                    System.out.println("Если ребенку " +ageChild+" лет, то он может кататься на аттракционе только в сопровождении взрослого.");
+                }else {
+                    System.out.println("Если ребенку " +ageChild+" лет, то он может кататься на аттракционе без сопровождения взрослого.");
+                }
+
+            }
+        }
+
+
+    private static void Task7() {
+        int age=25;
+        boolean humanGoNoKindergarten= age>=2 && age<=6;
+        if (humanGoNoKindergarten){
+            System.out.println("Если возраст человека равен " +age+" лет, то ему нужно ходить в детский сад.");
+        } else {
+            boolean humanGoToSchool = age >= 7 && age <= 18;
+            if (humanGoToSchool) {
+                System.out.println("Если возраст человека равен " + age + " лет, то ему нужно ходить в школу.");
+            } else {
+                if (age > 18 && age <= 24) {
+                    System.out.println("Если возраст человека равен " + age + " лет, то его место в университете.");
+                } else {
+                    System.out.println("Если возраст человека равен " + age + " лет, то ему ему пора ходить на работу.");
+                }
+            }
+        }
+    }
+
 
     private static void Task6() {
         int place=102;
